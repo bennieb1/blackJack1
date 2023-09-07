@@ -9,7 +9,6 @@ public class Player {
     private double bet;
     private double balance;
 
-   
     public String getName() {
 
         return name;
@@ -56,7 +55,7 @@ public class Player {
             bet = amount;
             pot -= amount;
             System.out.println(name + " placed a bet of $" + amount);
-            System.out.println("Pot: $" + pot);
+            System.out.println("Balance: $" + pot);
 
         } else {
 
@@ -65,35 +64,35 @@ public class Player {
         }
 
     }
-    
+
     public void winBet() {
 
         double winnings = bet * 2;
         balance += winnings;
         bet = 0;
-        System.out.println(name + " won $ " + winnings);
+        System.out.println(name + " won Balance now is $ " + winnings);
 
     }
-    
+
     public void loseBet() {
 
         double lost = bet;
         balance += lost;
         bet = 0;
-        System.out.println(name + " lost the bet. $" + lost );
+        System.out.println(name + " lost the bet. $" + lost);
 
     }
-    
+
     public double getBalance() {
 
         return balance;
 
     }
-    
+
     public double getBet() {
-    
+
         return bet;
-    
+
     }
 
     public void addCard(Card aCard) {
