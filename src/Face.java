@@ -15,7 +15,7 @@ public enum Face{
     }
 
 
-    publiC int getValue(){
+    public int getValue(){
         
         return faceValue;
 

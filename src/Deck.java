@@ -10,7 +10,7 @@ public class Deck {
     private int currentCard;
     private static int Num_Of_Cards = 52;
 
-    publiC Deck(){
+    public Deck(){
 
         Face[] faces = {
 
@@ -47,7 +47,7 @@ public class Deck {
 
             int second = random.nextInt(Num_Of_Cards);
 
-            Card temp = deck[frist];
+            Card temp = deck[first];
             deck[first] = deck[second];
             deck[second] = temp;
 
@@ -56,7 +56,7 @@ public class Deck {
 
     }
 
-    public void getCardDeck(){
+    public boolean getCardDeck(){
 
         int start = 1;
 

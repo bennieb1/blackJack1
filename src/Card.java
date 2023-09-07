@@ -24,7 +24,7 @@ public class Card {
 
         }
 
-        @override
+        @Override
         public String toString(){
 
             return face + " of " + suit;
